@@ -7,17 +7,29 @@ implify json usage on delphi 10.1 and above
 
 
   var
+  
   JSON := TJsonObject.Create;
+  
   try
+  
   if JSON.Load('{"a":[0,1], "b":"Hello"}') then
+  
   begin
+  
     JSON.StrPath['c.d.e'] := '...';
+    
     JSON.BoolPath['a[0].ff'] := false;
+    
     showmessage(JSON.Dump);
+    
   end;
+  
   finally
+  
   JSON.Free;
+  
   end;
+  
   
   
   
@@ -62,5 +74,7 @@ begin
   finally
     jo.Free;
   end;
+  
+  
   
   
