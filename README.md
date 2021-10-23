@@ -3,7 +3,8 @@ JSONObject Helper Class
 
 
 implify json usage on delphi 10.1 and above
-...
+
+```
   var
   JSON := TJsonObject.Create;
   try
@@ -16,9 +17,10 @@ implify json usage on delphi 10.1 and above
   finally
   JSON.Free;
   end;
-...
+```
   or:
-...
+  
+```
 var
   jo, jo1: TJSONObject;
 begin
@@ -56,4 +58,4 @@ begin
   finally
     jo.Free;
   end;
-...
+```
