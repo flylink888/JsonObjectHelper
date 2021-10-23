@@ -28,10 +28,8 @@ begin
   try
     jo.S['Name'] := 'sensor';
     jo.S['Name'] := 'sensor11'; // 重复字段，内容以最后一个为准
-
     jo.i['age'] := 54;
     jo.i['age'] := 154;
-
     jo.D['birth'] := now;
     jo.B['worked'] := False;
     jo.i['money'] := $7FF1F2F3F4F5F6F7;
