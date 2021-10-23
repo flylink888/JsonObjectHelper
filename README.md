@@ -17,7 +17,6 @@ implify json usage on delphi 10.1 and above
   JSON.Free;
   end;
   
-  
   or:
   
 var
@@ -27,7 +26,7 @@ begin
   jo1 := TJSONObject.Create;
   try
     jo.S['Name'] := 'sensor';
-    jo.S['Name'] := 'sensor11'; // é‡å¤å­—æ®µï¼Œå†…å®¹ä»¥æœ€åä¸€ä¸ªä¸ºå‡†
+    jo.S['Name'] := 'sensor11'; // ÖØ¸´×Ö¶Î£¬ÄÚÈİÒÔ×îºóÒ»¸öÎª×¼
 
     jo.i['age'] := 54;
     jo.i['age'] := 154;
@@ -36,7 +35,7 @@ begin
     jo.B['worked'] := False;
     jo.i['money'] := $7FF1F2F3F4F5F6F7;
     jo.i['xx'] := 100;
-    jo.RemovePair('age').Free; // åˆ é™¤çš„å“ªæ€•æ˜¯ç®€å•ç±»å‹ï¼Œä¹Ÿéœ€è¦ä½¿ç”¨Freeï¼Œå¦åˆ™ä¼šæœ‰å†…å­˜æ³„éœ²
+    jo.RemovePair('age').Free; // É¾³ıµÄÄÄÅÂÊÇ¼òµ¥ÀàĞÍ£¬Ò²ĞèÒªÊ¹ÓÃFree£¬·ñÔò»áÓĞÄÚ´æĞ¹Â¶
 
     // jo.O['OBJ'] := TJSONObject.Create;
     jo.O['OBJ'].S['AAAA'] := '1200';
@@ -46,12 +45,12 @@ begin
     jo1.AddPair('ABB', 'ABC2000');
 
     jo.A['ArrayDemo'] := TJSONArray.Create;;
-    jo.A['ArrayDemo'].Add('ä¸­å›½');
+    jo.A['ArrayDemo'].Add('ÖĞ¹ú');
     jo.A['ArrayDemo'].Add(100);
     jo.A['ArrayDemo'].Add('wwww');
-    jo.A['ArrayDemo'].Add('true').Add('å¹¿ä¸œçœ').Add(False);
+    jo.A['ArrayDemo'].Add('true').Add('¹ã¶«Ê¡').Add(False);
 
-    jo.A['ArrayDemo'].Remove(3).Free; // åˆ é™¤çš„å“ªæ€•æ˜¯ç®€å•ç±»å‹ï¼Œä¹Ÿéœ€è¦ä½¿ç”¨Freeï¼Œå¦åˆ™ä¼šæœ‰å†…å­˜æ³„éœ²
+    jo.A['ArrayDemo'].Remove(3).Free; // É¾³ıµÄÄÄÅÂÊÇ¼òµ¥ÀàĞÍ£¬Ò²ĞèÒªÊ¹ÓÃFree£¬·ñÔò»áÓĞÄÚ´æĞ¹Â¶
     jo.Remove('jjoo11');
     Result := jo.ToString;
   finally
